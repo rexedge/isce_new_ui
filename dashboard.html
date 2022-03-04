@@ -147,9 +147,24 @@
             <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Payments</li></a>
             <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Services</li></a>
             <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Galleries</li></a>
-            <a href=""> <li class="py-2 px-4 w-full rounded-b-lg">Edit Business Hours</li></a>
+            <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Business Hours</li></a>
+            <a href=""> <li class="py-2 px-4 w-full rounded-b-lg">
+                <div class="flex items-center space-x-3 cursor-pointer" x-data="{ show: true }" @click="show =!show">
+                    <div class="relative w-10 h-5 transition duration-200 ease-linear rounded-full"
+                        :class="[show ? 'bg-indigo-500' : 'bg-gray-300']">
+                        <label for="show"
+                            @click="show =!show"
+                            class="absolute left-0 w-5 h-5 mb-2 transition duration-100 ease-linear transform bg-white border-2 rounded-full cursor-pointer"
+                            :class="[show ? 'translate-x-full border-indigo-500' : 'translate-x-0 border-gray-300']"></label>
+                        <input type="checkbox" name="show" class="hidden w-full h-full rounded-full appearance-none active:outline-none focus:outline-none"/>
+                    </div>
+            
+                    <p class="text-gray-500">Lock Card</p>
+                </div>
+            </li></a>
         </ul>
     </div>
+    
   </div>
 </div>
 <!-- Card Display Ends Here -->
