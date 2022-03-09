@@ -3,114 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add basic info to your Digital Cards by ISCE</title>
+    <title>Add Social Links to your Digital Cards by ISCE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
     <style>
           .svgdiv{
                color: #0D0221;
                background-color: white;
-          }
-          input:checked + label{
-               box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-          }
-          .radio-red{
-              color: red;
-              background-color: white;
-              border-color: red;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          input:checked + .radio-red{
-              color: white;
-              background-color: red;
-              border-color: white;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          .radio-orange{
-              color: orange;
-              background-color: white;
-              border-color: orange;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          input:checked + .radio-orange{
-              color: white;
-              background-color: orange;
-              border-color: white;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          .radio-yellow{
-              color: #cfc31e;
-              background-color: white;
-              border-color: #cfc31e;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          input:checked + .radio-yellow{
-              color: white;
-              background-color: #cfc31e;
-              border-color: white;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          .radio-green{
-              color: green;
-              background-color: white;
-              border-color: green;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          input:checked + .radio-green{
-              color: white;
-              background-color: green;
-              border-color: white;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          .radio-blue{
-              color: blue;
-              background-color: white;
-              border-color: blue;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          input:checked + .radio-blue{
-              color: white;
-              background-color: blue;
-              border-color: white;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          .radio-indigo{
-              color: indigo;
-              background-color: white;
-              border-color: indigo;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          input:checked + .radio-indigo{
-              color: white;
-              background-color: indigo;
-              border-color: white;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          .radio-violet{
-              color: violet;
-              background-color: white;
-              border-color: violet;
-              border-width: 2px;
-              border-radius: 5px;
-          }
-          input:checked + .radio-violet{
-              color: white;
-              background-color: violet;
-              border-color: white;
-              border-width: 2px;
-              border-radius: 5px;
           }
     </style>
     <script src="https://use.fontawesome.com/fd959d8b36.js"></script>
@@ -192,90 +91,94 @@
 <!-- Main Contents Go Here -->
 <div class="main" style="background-color: #0D0221;">
 
-     <div class="container mt-5 mx-auto">
-          
+     <div class="container mx-auto">
           <div class="max-w-md py-10 px-4" style="margin-left: auto; margin-right: auto;">
-
-            <h1 class="text-xl text-white text-center">
-                Basic Details
+            <h1 class="text-xl text-center text-white">
+                 Social Links
             </h1>
                <div class="flex flex-col items-center justify-center">
      
                    <div class="bg-white shadow rounded lg:w-1/2  md:w-1/2 w-full p-10 mt-5">
                     <form class="">
                         <div class="input-group mb-5">
-                            <h3 class="text-sm font-medium mb-2">Card Color</h3>
-                            <span class="">
-                                <input class="hidden" id="radio_red" type="radio" name="radio">
-                                <label class="cursor-pointer radio-red text-xs font-semibold mr-3 px-2.5 py-0.5" for="radio_red">
-                                    Red
-                                </label>
-                            </span>
-                            <span class="">
-                                <input class="hidden" id="radio_orange" type="radio" name="radio">
-                                <label class="cursor-pointer radio-orange text-xs font-semibold mr-3 px-2.5 py-0.5" for="radio_orange">
-                                    Orange
-                                </label>
-                            </span>
-                            <span class="">
-                                <input class="hidden" id="radio_yellow" type="radio" name="radio">
-                                <label class="cursor-pointer radio-yellow text-xs font-semibold mr-3 px-2.5 py-0.5" for="radio_yellow">
-                                    Yellow
-                                </label>
-                            </span>
-                            <span class="">
-                                <input class="hidden" id="radio_green" type="radio" name="radio">
-                                <label class="cursor-pointer radio-green text-xs font-semibold mr-3 px-2.5 py-0.5" for="radio_green">
-                                    Green
-                                </label>
-                            </span>
-                            <span class="">
-                                <input class="hidden" id="radio_blue" type="radio" name="radio">
-                                <label class="cursor-pointer radio-blue text-xs font-semibold mr-3 px-2.5 py-0.5" for="radio_blue">
-                                    Blue
-                                </label>
-                            </span>
-                            <span class="">
-                                <input class="hidden" id="radio_indigo" type="radio" name="radio">
-                                <label class="cursor-pointer radio-indigo text-xs font-semibold mr-3 px-2.5 py-0.5" for="radio_indigo">
-                                    Indigo
-                                </label>
-                            </span>
-                            <span class="">
-                                <input class="hidden" id="radio_violet" type="radio" name="radio">
-                                <label class="cursor-pointer radio-violet text-xs font-semibold mr-3 px-2.5 py-0.5" for="radio_violet">
-                                    Violet
-                                </label>
-                            </span>
-
-                        </div>
-                        <div class="input-group mb-5">
-                            <label class="block mb-2 text-sm font-medium text-gray-900" for="card_cover">Card Cover</label>
-                            <input accept=".png,.jpg" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer focus:outline-none focus:border-transparent" aria-describedby="user_avatar_help" id="card_cover" type="file">
-                        </div>
-                        <div class="input-group mb-5">
-                            <label class="block mb-2 text-sm font-medium text-gray-900" for="card_logo">Card Logo</label>
-                            <input accept=".png,.jpg" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer focus:outline-none focus:border-transparent" aria-describedby="user_avatar_help" id="card_logo" type="file">
-                        </div>
-                        <div class="input-group mb-5">
-                            <label for="card_title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Card Title</label>
-                            <input type="text" id="card_title" class="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                        <div class="input-group mb-5">
-                            <label for="card_subtitle" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Card Subtitle</label>
-                            <input type="text" id="card_subtitle" class="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-blue-500 focus:border-blue-500">
-                        </div>
-                        <div class="input-group mb-5">
-                            <label for="card_description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Card Description</label>
-                            <textarea class="block p-2 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-xs focus:ring-blue-500 focus:border-blue-500" name="card_description" id="card_description" cols="30" rows="5"></textarea>
-                        </div>
-                        <div class="input-group mb-5">
-                            <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label>
+                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
                             <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300 dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
-                                  https://www.iscedcs.com/
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                                Facebook
                                 </span>
-                                <input type="text" id="personalized_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="username">
+                                <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
+                            </div>
+                        </div>
+                        <div class="input-group mb-5">
+                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                                Twitter
+                                </span>
+                                <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
+                            </div>
+                        </div>
+                        <div class="input-group mb-5">
+                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                                LinkedIn
+                                </span>
+                                <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
+                            </div>
+                        </div>
+                        <div class="input-group mb-5">
+                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                                Instagram
+                                </span>
+                                <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
+                            </div>
+                        </div>
+                        <div class="input-group mb-5">
+                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                                WhatsApp
+                                </span>
+                                <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
+                            </div>
+                        </div>
+                        <div class="input-group mb-5">
+                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                                Youtube
+                                </span>
+                                <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
+                            </div>
+                        </div>
+                        <div class="input-group mb-5">
+                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                                Pinterest
+                                </span>
+                                <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
+                            </div>
+                        </div>
+                        <div class="input-group mb-5">
+                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                                Snapchat
+                                </span>
+                                <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
+                            </div>
+                        </div>
+                        <div class="input-group mb-5">
+                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                            <div class="flex">
+                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                                TikTok
+                                </span>
+                                <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
                             </div>
                         </div>
                           
