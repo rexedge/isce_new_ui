@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Social Links to your Digital Cards by ISCE</title>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Account on Digital Cards by ISCE</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <script>
+     tailwind.config = {
+     theme: {
+          extend: {
+          fontFamily: {
+               sans: ['Inter', 'sans-serif'],
+          },
+          }
+     }
+     }
+     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
     <style>
@@ -92,108 +107,30 @@
 <div class="main" style="background-color: #0D0221;">
 
      <div class="container mx-auto">
-          <div class="max-w-md py-10 px-4" style="margin-left: auto; margin-right: auto;">
+          <div class="max-w-xl py-10 px-4" style="margin-left: auto; margin-right: auto;">
             <h1 class="text-xl text-center text-white">
-                 Social Links
+                 My Account
             </h1>
                <div class="flex flex-col items-center justify-center">
-     
-                   <div class="bg-white shadow rounded lg:w-1/2  md:w-1/2 w-full p-10 mt-5">
-                    <form class="">
-                        <div class="input-group mb-5">
-                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
-                            <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
-                                Facebook
-                                </span>
-                                <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
-                            </div>
-                        </div>
-                        <div class="input-group mb-5">
-                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
-                            <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
-                                Twitter
-                                </span>
-                                <input type="text" id="tw_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
-                            </div>
-                        </div>
-                        <div class="input-group mb-5">
-                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
-                            <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
-                                LinkedIn
-                                </span>
-                                <input type="text" id="li_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
-                            </div>
-                        </div>
-                        <div class="input-group mb-5">
-                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
-                            <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
-                                Instagram
-                                </span>
-                                <input type="text" id="ig_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
-                            </div>
-                        </div>
-                        <div class="input-group mb-5">
-                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
-                            <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
-                                WhatsApp
-                                </span>
-                                <input type="text" id="wa_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
-                            </div>
-                        </div>
-                        <div class="input-group mb-5">
-                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
-                            <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
-                                Youtube
-                                </span>
-                                <input type="text" id="yt_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
-                            </div>
-                        </div>
-                        <div class="input-group mb-5">
-                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
-                            <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
-                                Pinterest
-                                </span>
-                                <input type="text" id="pin_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
-                            </div>
-                        </div>
-                        <div class="input-group mb-5">
-                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
-                            <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
-                                Snapchat
-                                </span>
-                                <input type="text" id="sc_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
-                            </div>
-                        </div>
-                        <div class="input-group mb-5">
-                            <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
-                            <div class="flex">
-                                <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
-                                TikTok
-                                </span>
-                                <input type="text" id="tt_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
-                            </div>
-                        </div>
-                          
-                        <div class="text-center">
-                            <input class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" type="submit" value="Save">
-                        </div>
-                    </form>
-                   </div>
+                    <div class="bg-white shadow rounded lg:w-1/2  md:w-1/2 w-full p-10 mt-5">
+                         <div class="text-center">
+                              <img
+                              src="images/me.jpg"
+                              class="rounded-full w-32 mb-4 mx-auto"
+                              alt="Avatar"
+                              />
+                              <h5 class="text-xl font-medium leading-tight mb-2">Oyeniran Ayobami</h5>
+                              <p class="text-gray-500">ap.oyeniran@gmail.com</p>
+                         </div>
+                         <div class="flex items-center justify-center mt-5 ">
+                              <div class="inline-flex shadow-md hover:shadow-lg focus:shadow-lg" role="group">
+                                   <a href="edit-profile.html" class="rounded-l inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">Edit</a>
+                                   <a href="change-password.html" class="rounded-r inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-0 active:bg-blue-800 transition duration-150 ease-in-out">Change Password</a>
+                              </div>
+                         </div>
+                    </div>
                </div>
            </div>
-           <!-- Component Start -->
-
-
-         
-          <!-- Component End  -->
      </div>
 </div>
 
@@ -265,6 +202,7 @@
  <!-- AlpineJS Library -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
  <script>
      
  </script>
