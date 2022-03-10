@@ -107,7 +107,7 @@
 <div class="main" style="background-color: #0D0221;">
 
      <div class="container mx-auto">
-          <div class="max-w-md py-10 px-4" style="margin-left: auto; margin-right: auto;">
+          <div class="max-w-xl py-10 px-4" style="margin-left: auto; margin-right: auto;">
             <h1 class="text-xl text-center text-white">
                  Business Hours
             </h1>
@@ -134,349 +134,467 @@
                          </div>
                          <hr class="mb-5">
 
-                         <h2 class="mb-5 text-xl">
-                              Monday
-                         </h2>
-                         <div class="input-group mb-2">
-                              <label for="monday-closed" class="flex relative items-center mb-4 cursor-pointer">
-                                   <input type="checkbox" id="monday-closed" class="sr-only">
-                                   <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                                   <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
-                              </label>
-                         </div>
-                         <div class="input-group mb-5">
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Opening Time"
-                                                  id="monday-opening-time"
-                                                  value="08:00 AM"
-                                        />
-                                        <label for="monday-opening-time" class="text-gray-700">Opening Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
+                         <ul class="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4" id="tabs-tab"
+                              role="tablist">
+                              <li class="nav-item" role="presentation">
+                              <a href="#tabs-monday" class="
+                                   nav-link
+                                   block
+                                   font-medium
+                                   text-xs
+                                   leading-tight
+                                   uppercase
+                                   border-x-0 border-t-0 border-b-2 border-transparent
+                                   px-6
+                                   py-3
+                                   my-2
+                                   hover:border-transparent hover:bg-gray-100
+                                   focus:border-transparent
+                                   active
+                              " id="tabs-monday-tab" data-bs-toggle="pill" data-bs-target="#tabs-monday" role="tab" aria-controls="tabs-monday"
+                                   aria-selected="true">monday</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <a href="#tabs-tuesday" class="
+                                   nav-link
+                                   block
+                                   font-medium
+                                   text-xs
+                                   leading-tight
+                                   uppercase
+                                   border-x-0 border-t-0 border-b-2 border-transparent
+                                   px-6
+                                   py-3
+                                   my-2
+                                   hover:border-transparent hover:bg-gray-100
+                                   focus:border-transparent
+                              " id="tabs-tuesday-tab" data-bs-toggle="pill" data-bs-target="#tabs-tuesday" role="tab" aria-controls="tabs-tuesday"
+                                   aria-selected="true">tuesday</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <a href="#tabs-wednesday" class="
+                                   nav-link
+                                   block
+                                   font-medium
+                                   text-xs
+                                   leading-tight
+                                   uppercase
+                                   border-x-0 border-t-0 border-b-2 border-transparent
+                                   px-6
+                                   py-3
+                                   my-2
+                                   hover:border-transparent hover:bg-gray-100
+                                   focus:border-transparent
+                              " id="tabs-wednesday-tab" data-bs-toggle="pill" data-bs-target="#tabs-wednesday" role="tab" aria-controls="tabs-wednesday"
+                                   aria-selected="true">wednesday</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <a href="#tabs-thursday" class="
+                                   nav-link
+                                   block
+                                   font-medium
+                                   text-xs
+                                   leading-tight
+                                   uppercase
+                                   border-x-0 border-t-0 border-b-2 border-transparent
+                                   px-6
+                                   py-3
+                                   my-2
+                                   hover:border-transparent hover:bg-gray-100
+                                   focus:border-transparent
+                              " id="tabs-thursday-tab" data-bs-toggle="pill" data-bs-target="#tabs-thursday" role="tab" aria-controls="tabs-thursday"
+                                   aria-selected="true">thursday</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <a href="#tabs-friday" class="
+                                   nav-link
+                                   block
+                                   font-medium
+                                   text-xs
+                                   leading-tight
+                                   uppercase
+                                   border-x-0 border-t-0 border-b-2 border-transparent
+                                   px-6
+                                   py-3
+                                   my-2
+                                   hover:border-transparent hover:bg-gray-100
+                                   focus:border-transparent
+                              " id="tabs-friday-tab" data-bs-toggle="pill" data-bs-target="#tabs-friday" role="tab" aria-controls="tabs-friday"
+                                   aria-selected="true">friday</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <a href="#tabs-saturday" class="
+                                   nav-link
+                                   block
+                                   font-medium
+                                   text-xs
+                                   leading-tight
+                                   uppercase
+                                   border-x-0 border-t-0 border-b-2 border-transparent
+                                   px-6
+                                   py-3
+                                   my-2
+                                   hover:border-transparent hover:bg-gray-100
+                                   focus:border-transparent
+                              " id="tabs-saturday-tab" data-bs-toggle="pill" data-bs-target="#tabs-saturday" role="tab" aria-controls="tabs-saturday"
+                                   aria-selected="true">saturday</a>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <a href="#tabs-sunday" class="
+                                   nav-link
+                                   block
+                                   font-medium
+                                   text-xs
+                                   leading-tight
+                                   uppercase
+                                   border-x-0 border-t-0 border-b-2 border-transparent
+                                   px-6
+                                   py-3
+                                   my-2
+                                   hover:border-transparent hover:bg-gray-100
+                                   focus:border-transparent
+                              " id="tabs-sunday-tab" data-bs-toggle="pill" data-bs-target="#tabs-sunday" role="tab" aria-controls="tabs-sunday"
+                                   aria-selected="true">sunday</a>
+                              </li>
+                         </ul>
+                              <div class="tab-content" id="tabs-tabContent">
+                                   <div class="tab-pane fade show active" id="tabs-monday" role="tabpanel" aria-labelledby="tabs-monday-tab">
+                                        
+                                        <div class="input-group mb-2">
+                                             <label for="monday-closed" class="flex relative items-center mb-4 cursor-pointer">
+                                                  <input type="checkbox" id="monday-closed" class="sr-only">
+                                                  <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
+                                                  <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
+                                             </label>
+                                        </div>
+                                        <div class="input-group mb-5">
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Opening Time"
+                                                                 id="monday-opening-time"
+                                                                 value="08:00 AM"
+                                                       />
+                                                       <label for="monday-opening-time" class="text-gray-700">Opening Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Closing Tyme"
+                                                                 id="monday-closing-time"
+                                                                 value="05:00 PM"
+                                                       />
+                                                       <label for="monday-closing-time" class="text-gray-700">Closing Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="tab-pane fade show" id="tabs-tuesday" role="tabpanel" aria-labelledby="tabs-tuesday-tab">
+                                        
+                                        <div class="input-group mb-2">
+                                             <label for="tuesday-closed" class="flex relative items-center mb-4 cursor-pointer">
+                                                  <input type="checkbox" id="tuesday-closed" class="sr-only">
+                                                  <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
+                                                  <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
+                                             </label>
+                                        </div>
+                                        <div class="input-group mb-2">
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Opening Time"
+                                                                 id="tuesday-opening-time"
+                                                                 value="08:00 AM"
+                                                       />
+                                                       <label for="tuesday-opening-time" class="text-gray-700">Opening Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Closing Tyme"
+                                                                 id="tuesday-closing-time"
+                                                                 value="05:00 PM"
+                                                       />
+                                                       <label for="tuesday-closing-time" class="text-gray-700">Closing Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="tab-pane fade show" id="tabs-wednesday" role="tabpanel" aria-labelledby="tabs-wednesday-tab">
+                                        
+                                        <div class="input-group mb-2">
+                                             <label for="wednesday-closed" class="flex relative items-center mb-4 cursor-pointer">
+                                                  <input type="checkbox" id="wednesday-closed" class="sr-only">
+                                                  <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
+                                                  <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
+                                             </label>
+                                        </div>
+                                        <div class="input-group mb-2">
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Opening Time"
+                                                                 id="wednesday-opening-time"
+                                                                 value="08:00 AM"
+                                                       />
+                                                       <label for="wednesday-opening-time" class="text-gray-700">Opening Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Closing Tyme"
+                                                                 id="wednesday-closing-time"
+                                                                 value="05:00 PM"
+                                                       />
+                                                       <label for="wednesday-closing-time" class="text-gray-700">Closing Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="tab-pane fade show" id="tabs-thursday" role="tabpanel" aria-labelledby="tabs-thursday-tab">
+                                        
+                                        <div class="input-group mb-2">
+                                             <label for="thursday-closed" class="flex relative items-center mb-4 cursor-pointer">
+                                                  <input type="checkbox" id="thursday-closed" class="sr-only">
+                                                  <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
+                                                  <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
+                                             </label>
+                                        </div>
+                                        <div class="input-group mb-2">
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Opening Time"
+                                                                 id="thursday-opening-time"
+                                                                 value="08:00 AM"
+                                                       />
+                                                       <label for="thursday-opening-time" class="text-gray-700">Opening Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Closing Tyme"
+                                                                 id="thursday-closing-time"
+                                                                 value="05:00 PM"
+                                                       />
+                                                       <label for="thursday-closing-time" class="text-gray-700">Closing Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="tab-pane fade show" id="tabs-friday" role="tabpanel" aria-labelledby="tabs-friday-tab">
+                                        
+                                        <div class="input-group mb-2">
+                                             <label for="friday-closed" class="flex relative items-center mb-4 cursor-pointer">
+                                                  <input type="checkbox" id="friday-closed" class="sr-only">
+                                                  <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
+                                                  <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
+                                             </label>
+                                        </div>
+                                        <div class="input-group mb-2">
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Opening Time"
+                                                                 id="friday-opening-time"
+                                                                 value="08:00 AM"
+                                                       />
+                                                       <label for="friday-opening-time" class="text-gray-700">Opening Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Closing Tyme"
+                                                                 id="friday-closing-time"
+                                                                 value="05:00 PM"
+                                                       />
+                                                       <label for="friday-closing-time" class="text-gray-700">Closing Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="tab-pane fade show" id="tabs-saturday" role="tabpanel" aria-labelledby="tabs-saturday-tab">
+                                        
+                                        <div class="input-group mb-2">
+                                             <label for="saturday-closed" class="flex relative items-center mb-4 cursor-pointer">
+                                                  <input type="checkbox" id="saturday-closed" class="sr-only">
+                                                  <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
+                                                  <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
+                                             </label>
+                                        </div>
+                                        <div class="input-group mb-2">
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Opening Time"
+                                                                 id="saturday-opening-time"
+                                                                 value="08:00 AM"
+                                                       />
+                                                       <label for="saturday-opening-time" class="text-gray-700">Opening Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Closing Tyme"
+                                                                 id="saturday-closing-time"
+                                                                 value="05:00 PM"
+                                                       />
+                                                       <label for="saturday-closing-time" class="text-gray-700">Closing Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="tab-pane fade show" id="tabs-sunday" role="tabpanel" aria-labelledby="tabs-sunday-tab">
+                                        
+                                        <div class="input-group mb-2">
+                                             <label for="sunday-closed" class="flex relative items-center mb-4 cursor-pointer">
+                                                  <input type="checkbox" id="sunday-closed" class="sr-only">
+                                                  <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
+                                                  <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
+                                             </label>
+                                        </div>
+                                        <div class="input-group mb-2">
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Opening Time"
+                                                                 id="sunday-opening-time"
+                                                                 value="08:00 AM"
+                                                       />
+                                                       <label for="sunday-opening-time" class="text-gray-700">Opening Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                             <div class="flex justify-center">
+                                                  <div class="timepicker relative form-floating mb-3 xl:w-96">
+                                                       <input    type="text"
+                                                                 class="form-control block w-full px-3 py-1.5
+                                                                 text-base font-normal text-gray-700 bg-white 
+                                                                 bg-clip-padding border border-solid border-gray-300 rounded 
+                                                                 transition ease-in-out m-0 focus:text-gray-700 
+                                                                 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                                                 placeholder="Closing Tyme"
+                                                                 id="sunday-closing-time"
+                                                                 value="05:00 PM"
+                                                       />
+                                                       <label for="sunday-closing-time" class="text-gray-700">Closing Time</label>
+                                                       <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
+                                                            <i class="fas fa-clock timepicker-icon"></i>
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
                                    </div>
                               </div>
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Closing Tyme"
-                                                  id="monday-closing-time"
-                                                  value="05:00 PM"
-                                        />
-                                        <label for="monday-closing-time" class="text-gray-700">Closing Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
-
-                         <h2 class="mb-5 text-xl">
-                              Tuesday
-                         </h2>
-                         <div class="input-group mb-2">
-                              <label for="tuesday-closed" class="flex relative items-center mb-4 cursor-pointer">
-                                   <input type="checkbox" id="tuesday-closed" class="sr-only">
-                                   <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                                   <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
-                              </label>
-                         </div>
-                         <div class="input-group mb-2">
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Opening Time"
-                                                  id="tuesday-opening-time"
-                                                  value="08:00 AM"
-                                        />
-                                        <label for="tuesday-opening-time" class="text-gray-700">Opening Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Closing Tyme"
-                                                  id="tuesday-closing-time"
-                                                  value="05:00 PM"
-                                        />
-                                        <label for="tuesday-closing-time" class="text-gray-700">Closing Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
-
-                         <h2 class="mb-5 text-xl">
-                              Wednesday
-                         </h2>
-                         <div class="input-group mb-2">
-                              <label for="wednesday-closed" class="flex relative items-center mb-4 cursor-pointer">
-                                   <input type="checkbox" id="wednesday-closed" class="sr-only">
-                                   <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                                   <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
-                              </label>
-                         </div>
-                         <div class="input-group mb-2">
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Opening Time"
-                                                  id="wednesday-opening-time"
-                                                  value="08:00 AM"
-                                        />
-                                        <label for="wednesday-opening-time" class="text-gray-700">Opening Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Closing Tyme"
-                                                  id="wednesday-closing-time"
-                                                  value="05:00 PM"
-                                        />
-                                        <label for="wednesday-closing-time" class="text-gray-700">Closing Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
-
-                         <h2 class="mb-5 text-xl">
-                              Thursday
-                         </h2>
-                         <div class="input-group mb-2">
-                              <label for="thursday-closed" class="flex relative items-center mb-4 cursor-pointer">
-                                   <input type="checkbox" id="thursday-closed" class="sr-only">
-                                   <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                                   <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
-                              </label>
-                         </div>
-                         <div class="input-group mb-2">
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Opening Time"
-                                                  id="thursday-opening-time"
-                                                  value="08:00 AM"
-                                        />
-                                        <label for="thursday-opening-time" class="text-gray-700">Opening Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Closing Tyme"
-                                                  id="thursday-closing-time"
-                                                  value="05:00 PM"
-                                        />
-                                        <label for="thursday-closing-time" class="text-gray-700">Closing Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
-
-
-                         <h2 class="mb-5 text-xl">
-                              Friday
-                         </h2>
-                         <div class="input-group mb-2">
-                              <label for="friday-closed" class="flex relative items-center mb-4 cursor-pointer">
-                                   <input type="checkbox" id="friday-closed" class="sr-only">
-                                   <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                                   <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
-                              </label>
-                         </div>
-                         <div class="input-group mb-2">
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Opening Time"
-                                                  id="friday-opening-time"
-                                                  value="08:00 AM"
-                                        />
-                                        <label for="friday-opening-time" class="text-gray-700">Opening Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Closing Tyme"
-                                                  id="friday-closing-time"
-                                                  value="05:00 PM"
-                                        />
-                                        <label for="friday-closing-time" class="text-gray-700">Closing Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
-
-                         <h2 class="mb-5 text-xl">
-                              Saturday
-                         </h2>
-                         <div class="input-group mb-2">
-                              <label for="saturday-closed" class="flex relative items-center mb-4 cursor-pointer">
-                                   <input type="checkbox" id="saturday-closed" class="sr-only">
-                                   <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                                   <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
-                              </label>
-                         </div>
-                         <div class="input-group mb-2">
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Opening Time"
-                                                  id="saturday-opening-time"
-                                                  value="08:00 AM"
-                                        />
-                                        <label for="saturday-opening-time" class="text-gray-700">Opening Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Closing Tyme"
-                                                  id="saturday-closing-time"
-                                                  value="05:00 PM"
-                                        />
-                                        <label for="saturday-closing-time" class="text-gray-700">Closing Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
-
-                         <h2 class="mb-5 text-xl">
-                              Sunday
-                         </h2>
-                         <div class="input-group mb-2">
-                              <label for="sunday-closed" class="flex relative items-center mb-4 cursor-pointer">
-                                   <input type="checkbox" id="sunday-closed" class="sr-only">
-                                   <div class="w-11 h-6 bg-gray-200 rounded-full border border-gray-200 toggle-bg dark:bg-gray-700 dark:border-gray-600"></div>
-                                   <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Closed</span>
-                              </label>
-                         </div>
-                         <div class="input-group mb-2">
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Opening Time"
-                                                  id="sunday-opening-time"
-                                                  value="08:00 AM"
-                                        />
-                                        <label for="sunday-opening-time" class="text-gray-700">Opening Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                              <div class="flex justify-center">
-                                   <div class="timepicker relative form-floating mb-3 xl:w-96">
-                                        <input    type="text"
-                                                  class="form-control block w-full px-3 py-1.5
-                                                  text-base font-normal text-gray-700 bg-white 
-                                                  bg-clip-padding border border-solid border-gray-300 rounded 
-                                                  transition ease-in-out m-0 focus:text-gray-700 
-                                                  focus:bg-white focus:border-blue-600 focus:outline-none"
-                                                  placeholder="Closing Tyme"
-                                                  id="sunday-closing-time"
-                                                  value="05:00 PM"
-                                        />
-                                        <label for="sunday-closing-time" class="text-gray-700">Closing Time</label>
-                                        <button tabindex="0" type="button" class="timepicker-toggle-button" data-mdb-toggle="timepicker">
-                                             <i class="fas fa-clock timepicker-icon"></i>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
                               
                          <div class="text-center">
                               <input class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" type="submit" value="Save">
