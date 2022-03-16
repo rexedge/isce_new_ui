@@ -98,18 +98,18 @@
                         <div class="flex justify-between">
                             <div class="flex items-center space-x-3 cursor-pointer" x-data="{ show: true }" @click="show =!show">
                                 <div class="relative w-10 h-5 transition duration-200 ease-linear rounded-full"
-                                    :class="[show ? 'bg-indigo-500' : 'bg-gray-300']">
+                                    :class="[show ? 'bg-gray-900' : 'bg-gray-300']">
                                     <label for="show"
                                         @click="show =!show"
                                         class="absolute left-0 w-5 h-5 mb-2 transition duration-100 ease-linear transform bg-white border-2 rounded-full cursor-pointer"
-                                        :class="[show ? 'translate-x-full border-indigo-500' : 'translate-x-0 border-gray-300']"></label>
+                                        :class="[show ? 'translate-x-full border-gray-900' : 'translate-x-0 border-gray-300']"></label>
                                     <input type="checkbox" name="show" class="hidden w-full h-full rounded-full appearance-none active:outline-none focus:outline-none"/>
                                 </div>
                         
                                 <p class="">Locked</p>
                             </div>
                             <div class="md:invisible">
-                                <a  data-bs-toggle="modal" data-bs-target="#modal-profile-preview"><img src="images/invisible.png" alt="" style="height: 30px;" class="justify-self-end"></a>
+                                <a  data-bs-toggle="modal" data-bs-target="#modal-profile-preview"><img src="images/show.png" alt="" style="height: 30px;" class="justify-self-end"></a>
                             </div>
                             
                         </div>
@@ -139,30 +139,37 @@
                             </div>
                         </div>
             
-                        <div class="p-5 rounded-lg">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Edit Card Details</h5>
-                            <ul class="w-48 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white" style="width: 100%;">
-                                <a href="template.html"> <li class="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 dark:border-gray-600">Edit Template</li></a>
-                                <a href="social.html"> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Social Links</li></a>
-                                <a><li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600" data-bs-toggle="modal" data-bs-target="#modal-payment">Edit Payments</li></a>
-                                <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Services</li></a>
-                                <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Galleries</li></a>
-                                <a href="business-hours.html"> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Business Hours</li></a>
-                                <li class="py-2 px-4 w-full rounded-b-lg">
-                                    <div class="flex items-center space-x-3 cursor-pointer" x-data="{ show: true }" @click="show =!show">
-                                        <div class="relative w-10 h-5 transition duration-200 ease-linear rounded-full"
-                                            :class="[show ? 'bg-indigo-500' : 'bg-gray-300']">
-                                            <label for="show"
-                                                @click="show =!show"
-                                                class="absolute left-0 w-5 h-5 mb-2 transition duration-100 ease-linear transform bg-white border-2 rounded-full cursor-pointer"
-                                                :class="[show ? 'translate-x-full border-indigo-500' : 'translate-x-0 border-gray-300']"></label>
-                                            <input type="checkbox" name="show" class="hidden w-full h-full rounded-full appearance-none active:outline-none focus:outline-none"/>
-                                        </div>
-                                
-                                        <p class="">Lock Card</p>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="rounded-lg">
+                            
+                            <a href="template.html" class="flex justify-between mt-4 mb-2 w-full inline-block px-6 py-2 shadow-lg bg-white border-gray-900 border text-gray-700 font-medium text-xs leading-normal rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                                <span>Select Template</span>
+                                <span><img src="images/link.png" alt="" style="height: 15px;"></span>
+                            </a>
+                            
+                            <a href="social.html" class="flex justify-between mb-2 w-full inline-block px-6 py-2 shadow-lg bg-white border-gray-900 border text-gray-700 font-medium text-xs leading-normal rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                                <span>Social Links</span>
+                                <span><img src="images/link.png" alt="" style="height: 15px;"></span>
+                            </a>
+                            
+                            <a data-bs-toggle="modal" data-bs-target="#modal-payment" class="flex justify-between mb-2 w-full inline-block px-6 py-2 shadow-lg bg-white border-gray-900 border text-gray-700 font-medium text-xs leading-normal rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                                <span>Payment</span>
+                                <span><img src="images/link.png" alt="" style="height: 15px;"></span>
+                            </a>
+                            
+                            <a href="#!" class="flex justify-between mb-2 w-full inline-block px-6 py-2 shadow-lg bg-white border-gray-900 border text-gray-700 font-medium text-xs leading-normal rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                                <span>Services</span>
+                                <span><img src="images/link.png" alt="" style="height: 15px;"></span>
+                            </a>
+                            
+                            <a href="#!" class="flex justify-between mb-2 w-full inline-block px-6 py-2 shadow-lg bg-white border-gray-900 border text-gray-700 font-medium text-xs leading-normal rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                                <span>Gallery</span>
+                                <span><img src="images/link.png" alt="" style="height: 15px;"></span>
+                            </a>
+                            
+                            <a href="business-hours.html" class="flex justify-between mb-5 w-full inline-block px-6 py-2 shadow-lg bg-white border-gray-900 border text-gray-700 font-medium text-xs leading-normal rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                                <span>Business Hours</span>
+                                <span><img src="images/link.png" alt="" style="height: 15px;"></span>
+                            </a>
                             <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="modal-payment" tabindex="-1" aria-labelledby="modal-paymentTitle" aria-modal="true" role="dialog">
                                 <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
                                   <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
@@ -229,7 +236,7 @@
                       </div>
                   
                       <div class="mb-5">
-                         <iframe src="https://r3d5.disha.page/" frameborder="0" height="510px;" class="rounded-lg"></iframe>
+                         <iframe src="https://r3d5.disha.page/" frameborder="0" height="477px;" class="rounded-lg"></iframe>
                       </div>
                   </div>
             </div>
