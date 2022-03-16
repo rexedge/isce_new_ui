@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Cards by ISCE</title>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Account on Digital Cards by ISCE</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+     <link rel="stylesheet" href="flipper.css" />
+     <script>
+     tailwind.config = {
+     theme: {
+          extend: {
+          fontFamily: {
+               sans: ['Inter', 'sans-serif'],
+          },
+          }
+     }
+     }
+     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
-    <link rel="stylesheet" href="flipper.css" />
     <style>
-        .feature-cards{
-            background-color: #0D0221;
-            color: white;
-
-        }
-        .feature-cards > h4{
-            color: white;
-        }
-        .svgdiv{
-            color: #0D0221;
-            background-color: white;
-        }
-
-
+          .svgdiv{
+               color: #0D0221;
+               background-color: white;
+          }
     </style>
     <script src="https://use.fontawesome.com/fd959d8b36.js"></script>
 </head>
-<body>
+<body style="background-color: #0D0221;">
 
 <!-- Navigation Starts Here -->
-
-<nav class="border-gray-800 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
-
+<nav class="bg-white px-2 sm:px-4 py-2.5">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
-
         <a href="index.html" class="flex items-center">
             <!-- <img src="" class="mr-3 h-6 sm:h-10" alt="Isce Logo"> -->
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">iSCE Cards</span>
         </a>
-
         <div class="flex items-center md:order-2">
-
             <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
                 <span class="sr-only">Menu</span>
                 <img class="w-8 h-8 rounded-full" src="images/me.jpg" alt="">
             </button>
-            
             <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown">
-                
                 <div class="py-3 px-4">
                     <span class="block text-sm text-gray-900 dark:text-white">Ayobami Oyeniran Paul</span>
                     <span class="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">User</span>
                 </div>
-
                 <ul class="py-1" aria-labelledby="dropdown">
                     <li>
                         <a href="profile.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Profile</a>
@@ -63,19 +59,14 @@
                         <a href="" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Logout</a>
                     </li>
                 </ul>
-
             </div>
-
             <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                 <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
-
         </div>
-
         <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
-
             <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                 <li>
                     <a href="dashboard.html" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Dashboard</a>
@@ -89,108 +80,167 @@
                 <li>
                     <a href="" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Transactions</a>
                 </li>
-
             </ul>
-
         </div>
-
     </div>
 
 </nav>
-    
 <!-- Navigation Ends Here -->
 
 
 <!-- Main Contents Go Here -->
-<!-- Cards Display Starts Here -->
-<div class="py-12 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:text-center">
-      <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Your Card</h2>
-      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">This is a preview of how your card looks</p>
-    </div>
-
-    <div class="my-10">
-      <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-
-        <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <div class="relative">
-                    <div class="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-sm sm:px-5" style="background-image: url(images/cb.jpg);background-size: contain; background-repeat: no-repeat; height: 250px; width: 400px;">
-                        <div class="md:flex">
-                            <div class="w-full p-4">
-                                <div class="flex justify-between items-center text-white"> 
-                                    <img class="w-10 h-10 rounded-full" src="images/me.jpg" alt="">
-                                    <span class="">Oyeniran Ayobami Paul</span>
+<div class="grid md:grid-cols-2 gap-5 px-5 py-10">
+    <div class="cardpreview md:flex md:justify-self-end">
+        <div class="max-w-md">
+            <div class="flex flex-col items-center justify-center">
+                <div class="bg-white shadow rounded px-4">
+                    <div class="py-4">
+                        <div class="flex justify-between">
+                            <div class="flex items-center space-x-3 cursor-pointer" x-data="{ show: true }" @click="show =!show">
+                                <div class="relative w-10 h-5 transition duration-200 ease-linear rounded-full"
+                                    :class="[show ? 'bg-indigo-500' : 'bg-gray-300']">
+                                    <label for="show"
+                                        @click="show =!show"
+                                        class="absolute left-0 w-5 h-5 mb-2 transition duration-100 ease-linear transform bg-white border-2 rounded-full cursor-pointer"
+                                        :class="[show ? 'translate-x-full border-indigo-500' : 'translate-x-0 border-gray-300']"></label>
+                                    <input type="checkbox" name="show" class="hidden w-full h-full rounded-full appearance-none active:outline-none focus:outline-none"/>
                                 </div>
-                                <div class="flex flex-right">
-        
-                                </div>
-                                
+                        
+                                <p class="">Locked</p>
                             </div>
+                            <div class="md:invisible">
+                                <a  data-bs-toggle="modal" data-bs-target="#modal-profile-preview"><img src="images/invisible.png" alt="" style="height: 30px;" class="justify-self-end"></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="">
+                        <div class="">
+                            <div class="flip-box">
+                                <div class="flip-box-inner">
+                                    <div class="flip-box-front rounded-lg" style="background-image: url(images/cb.jpg);background-size: cover; background-repeat: no-repeat;">
+                                        <div class="w-full p-4">
+                                            <div class="flex justify-between items-center text-white"> 
+                                                <img class="w-10 h-10 rounded-full" src="images/me.jpg" alt="">
+                                                <span class="">Oyeniran Ayobami Paul</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-box-back rounded-lg" style="background-image: url(images/cf.jpg);background-size: cover; background-repeat: no-repeat;">
+                                        <div class="w-full p-4">
+                                            <div class="flex justify-between items-center text-white">
+                                                <span class="text-xl ">Card Back<small class="text-sm font-light"></small></span> 
+                                                <i class="fa fa-chevron-circle-down text-gray-300"></i> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="p-5 rounded-lg">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Edit Card Details</h5>
+                            <ul class="w-48 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white" style="width: 100%;">
+                                <a href="template.html"> <li class="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 dark:border-gray-600">Edit Template</li></a>
+                                <a href="social.html"> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Social Links</li></a>
+                                <a><li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600" data-bs-toggle="modal" data-bs-target="#modal-payment">Edit Payments</li></a>
+                                <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Services</li></a>
+                                <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Galleries</li></a>
+                                <a href="business-hours.html"> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Business Hours</li></a>
+                                <li class="py-2 px-4 w-full rounded-b-lg">
+                                    <div class="flex items-center space-x-3 cursor-pointer" x-data="{ show: true }" @click="show =!show">
+                                        <div class="relative w-10 h-5 transition duration-200 ease-linear rounded-full"
+                                            :class="[show ? 'bg-indigo-500' : 'bg-gray-300']">
+                                            <label for="show"
+                                                @click="show =!show"
+                                                class="absolute left-0 w-5 h-5 mb-2 transition duration-100 ease-linear transform bg-white border-2 rounded-full cursor-pointer"
+                                                :class="[show ? 'translate-x-full border-indigo-500' : 'translate-x-0 border-gray-300']"></label>
+                                            <input type="checkbox" name="show" class="hidden w-full h-full rounded-full appearance-none active:outline-none focus:outline-none"/>
+                                        </div>
+                                
+                                        <p class="">Lock Card</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="modal-payment" tabindex="-1" aria-labelledby="modal-paymentTitle" aria-modal="true" role="dialog">
+                                <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
+                                  <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                                    <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                                      <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalScrollableLabel">
+                                        Payment Modal
+                                      </h5>
+                                      <button type="button"
+                                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body relative p-4">
+                                      <p>Payment Details Here</p>
+                                    </div>
+                                    <div
+                                      class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+                                      <button type="button"
+                                        class="inline-block px-6 py-2.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
+                                        data-bs-dismiss="modal">
+                                        Close
+                                      </button>
+                                      <button type="button"
+                                        class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out ml-1">
+                                        Save changes
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <!-- PROFILE PREVIEW MODAL STARTS HERE -->
+                            <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="modal-profile-preview" tabindex="-1" aria-labelledby="modal-profile-previewTitle" aria-modal="true" role="dialog">
+                                <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
+                                  <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                                    <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                                        <h5 class="text-md font-medium leading-normal text-gray-800" id="exampleModalScrollableLabel">
+                                          Profile Preview
+                                        </h5>
+                                        <button type="button"
+                                          class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                                          data-bs-dismiss="modal" aria-label="Close">x</button>
+                                      </div>
+                                    <div class="modal-body flex justify-center">
+                                            <iframe src="https://r3d5.disha.page/" frameborder="0" height="500px;" class=""></iframe>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <!-- PROFILE PREVIEW MODAL ENDS HERE -->
                         </div>
                     </div>
                 </div>
-              </div>
-              <div class="flip-box-back">
-                <div class="relative">
-                    <div class="max-w-md mx-auto rounded-lg overflow-hidden md:max-w-sm sm:px-5" style="background-image: url(images/cf.jpg);background-size: contain; background-repeat: no-repeat; height: 250px; width: 400px;">
-                        <div class="md:flex">
-                            <div class="w-full p-4">
-                                <div class="flex justify-between items-center text-white"> <span class="text-xl ">Card Back<small class="text-sm font-light"></small></span> <i class="fa fa-chevron-circle-down text-gray-300"></i> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-              </div>
             </div>
         </div>
-      </dl>
-    </div>
-
-    <div style="width: 100%; " class="p-6 rounded-lg">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Edit Card Details</h5>
-        <ul class="w-48 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white" style="width: 350px;">
-            <a href="template.html"> <li class="py-2 px-4 w-full rounded-t-lg border-b border-gray-200 dark:border-gray-600">Edit Template</li></a>
-            <a href="social.html"> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Social Links</li></a>
-            <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Payments</li></a>
-            <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Services</li></a>
-            <a href=""> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Galleries</li></a>
-            <a href="business-hours.html"> <li class="py-2 px-4 w-full border-b border-gray-200 dark:border-gray-600">Edit Business Hours</li></a>
-            <li class="py-2 px-4 w-full rounded-b-lg">
-                <div class="flex items-center space-x-3 cursor-pointer" x-data="{ show: true }" @click="show =!show">
-                    <div class="relative w-10 h-5 transition duration-200 ease-linear rounded-full"
-                        :class="[show ? 'bg-indigo-500' : 'bg-gray-300']">
-                        <label for="show"
-                            @click="show =!show"
-                            class="absolute left-0 w-5 h-5 mb-2 transition duration-100 ease-linear transform bg-white border-2 rounded-full cursor-pointer"
-                            :class="[show ? 'translate-x-full border-indigo-500' : 'translate-x-0 border-gray-300']"></label>
-                        <input type="checkbox" name="show" class="hidden w-full h-full rounded-full appearance-none active:outline-none focus:outline-none"/>
-                    </div>
-            
-                    <p class="">Lock Card</p>
-                </div>
-            </li>
-        </ul>
     </div>
     
-  </div>
-</div>
-<!-- Card Display Ends Here -->
-
-<section>
-    <div class="pt-5">
-        
+    <div class="hidden md:flex profilepreview">
+        <div class="max-w-md">
+            <div class="flex flex-col items-center justify-center">
+  
+                  <div class="bg-white shadow rounded px-4">
+                      <div class="text-center py-3">
+                          <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Profile Preview</h2>
+                      </div>
+                  
+                      <div class="mb-5">
+                         <iframe src="https://r3d5.disha.page/" frameborder="0" height="510px;" class="rounded-lg"></iframe>
+                      </div>
+                  </div>
+            </div>
+          </div>
     </div>
-</section>
-
+</div>
 <!-- Main Contents End Here -->
 
 
 <!-- Footer Starts Here -->
-
-<footer class="feature-cards mt-10 md:bottom-0 md:left-0 md:right-0">
+<footer class="bg-white mt-10 md:bottom-0 md:left-0 md:right-0">
      <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
          <nav class="flex flex-wrap justify-center -mx-5 -my-2">
              <div class="px-5 py-2">
@@ -248,13 +298,13 @@
              © 2022 ISCE Digital Concept - You think it - We build it
          </p>
      </div>
- </footer>
- 
+</footer>
  <!-- Footer Ends Here -->
  
  <!-- AlpineJS Library -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
  <script>
      
  </script>
