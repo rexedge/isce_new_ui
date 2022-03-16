@@ -25,6 +25,18 @@
                color: #0D0221;
                background-color: white;
           }
+          .social-links{
+                height: 25px;
+                width: 25px;
+                color: white;
+                background-color: #000;
+                border-radius: 50%;
+                text-align: center;
+          }
+          input:checked + .social-links{
+                color: white;
+                background-color: blue;
+          }
     </style>
     <script src="https://use.fontawesome.com/fd959d8b36.js"></script>
 </head>
@@ -91,18 +103,47 @@
 
     <div class="container mx-auto">
          <div class="max-w-md py-10 px-4" style="margin-left: auto; margin-right: auto;">
-           <h1 class="text-xl text-center text-white">
-                Social Links
-           </h1>
+           
               <div class="flex flex-col items-center justify-center">
     
-                  <div class="bg-white shadow rounded lg:w-1/2  md:w-1/2 w-full p-5 mt-5">
+                  <div class="bg-white shadow rounded lg:w-1/2  md:w-1/2 w-full p-3 mt-5">
+                    <h1 class="text-lg text-center text-indigo-600">
+                        Social Links
+                   </h1>
                        <div class="flex justify-start mb-5">
                            <div class="px-2" data-bs-toggle="modal" data-bs-target="#fb-modal"><img src="images/facebook.png" alt="" style="height: 40px;"></div>
-                           <div class="px-2"><img src="images/instagram.png" alt="" style="height: 40px;"></div>
-                           <div class="px-2"><img src="images/twitter.png" alt="" style="height: 40px;"></div>
-                           <div class="px-2"><img src="images/linked.png" alt="" style="height: 40px;"></div>
+                           <div class="px-2" data-bs-toggle="modal" data-bs-target="#ig-modal"><img src="images/instagram.png" alt="" style="height: 40px;"></div>
+                           <div class="px-2" data-bs-toggle="modal" data-bs-target="#tw-modal"><img src="images/twitter.png" alt="" style="height: 40px;"></div>
+                           <div class="px-2" data-bs-toggle="modal" data-bs-target="#link-modal"><img src="images/linked.png" alt="" style="height: 40px;"></div>
                        </div>
+                  </div>
+
+                  <div class="bg-white shadow rounded lg:w-1/2  md:w-1/2 w-full p-1 mt-5">
+                    <div class="">
+                        <div class="p-3 rounded-lg max-w-md">
+                            <div class="flex justify-between">
+                                <div><h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Facebook Link</h5></div>
+                                <div><i class="fa-solid fa-trash"></i></div>
+                            </div>
+                          
+                          <p class="text-gray-700 text-base mb-2">
+                            https://www.facebook.com/oyeniran/
+                          </p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="p-3 rounded-lg max-w-md">
+                            <div class="flex justify-between">
+                                <div><h5 class="text-gray-900 text-xl leading-tight font-medium mb-2">Facebook Link</h5></div>
+                                <div><i class="fa-solid fa-trash"></i></div>
+                            </div>
+                          
+                          <p class="text-gray-700 text-base mb-2">
+                            https://www.facebook.com/oyeniran/
+                          </p>
+                        </div>
+                    </div>
                   </div>
               </div>
           </div>
@@ -115,6 +156,306 @@
 
 <!-- FACEBOOK MODAL STARTS HERE -->
 <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="fb-modal" tabindex="-1" aria-labelledby="fb-modalTitle" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
+        <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+            <div class="modal-body flex justify-center">
+                <form action="#!" method="post" class="my-5">
+                    <div class="hidden form-group mb-3">
+                        <input type="text"
+                        name="icon"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-icon"
+                          aria-describedby="emailHelp" placeholder="" value="fab fa-facebook">
+                      </div>
+                        <div class="hidden flex justify-center">
+                            <div class="mb-3 xl:w-96">
+                                <label for="" class="text-gray-800">Select Type</label>
+                                <div class="flex justify-start">
+                                    <div class="form-check form-check-inline">
+                                      <input class="hidden form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="social-links" id="facebook-link" value="link" checked>
+                                      <label class="social-links form-check-label inline-block text-gray-800" for="facebook-link"><i class="fa-brands fa-facebook-f"></i></label>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+                      <div class="hidden form-group mb-3">
+                        <input type="text"
+                        name="label"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-label"
+                          value="Facebook">
+                      </div>
+                      <div class="form-group mb-3">
+                        <input type="text"
+                        name="value"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-content"
+                          placeholder="Enter Facebook URL">
+                      </div>
+                      
+                        <button type="submit" class="
+                            px-6
+                            py-2.5
+                            bg-blue-600
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            hover:bg-blue-700 hover:shadow-lg
+                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-blue-800 active:shadow-lg
+                            transition
+                            duration-150
+                            ease-in-out">Add
+                        </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FACEBOOK MODAL ENDS HERE -->
+
+<!-- INSTAGRAM MODAL STARTS HERE -->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="ig-modal" tabindex="-1" aria-labelledby="ig-modalTitle" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
+        <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+            <div class="modal-body flex justify-center">
+                <form action="#!" method="post" class="my-5">
+                    <div class="hidden form-group mb-3">
+                        <input type="text"
+                        name="icon"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-icon"
+                          aria-describedby="emailHelp" placeholder="" value="fab fa-instagram">
+                      </div>
+                        <div class="hidden flex justify-center">
+                            <div class="mb-3 xl:w-96">
+                                <label for="" class="text-gray-800">Select Type</label>
+                                <div class="flex justify-start">
+                                    <div class="form-check form-check-inline">
+                                      <input class="hidden form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="social-links" id="instagram-link" value="link" checked>
+                                      <label class="social-links form-check-label inline-block text-gray-800" for="instagram-link"><i class="fa-brands fa-instagram"></i></label>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+                      <div class="hidden form-group mb-3">
+                        <input type="text"
+                        name="label"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-label"
+                          value="Facebook">
+                      </div>
+                      <div class="form-group mb-3">
+                        <input type="text"
+                        name="value"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-content"
+                          placeholder="Enter Instagram URL">
+                      </div>
+                      
+                        <button type="submit" class="
+                            px-6
+                            py-2.5
+                            bg-blue-600
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            hover:bg-blue-700 hover:shadow-lg
+                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-blue-800 active:shadow-lg
+                            transition
+                            duration-150
+                            ease-in-out">Add
+                        </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- INSTAGRAM MODAL ENDS HERE -->
+
+<!-- TWWITTER MODAL STARTS HERE -->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="tw-modal" tabindex="-1" aria-labelledby="tw-modalTitle" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
+        <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+            <div class="modal-body flex justify-center">
+                <form action="#!" method="post" class="my-5">
+                    <div class="hidden form-group mb-3">
+                        <input type="text"
+                        name="icon"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-icon"
+                          aria-describedby="emailHelp" placeholder="" value="fab fa-instagram">
+                      </div>
+                        <div class="hidden flex justify-center">
+                            <div class="mb-3 xl:w-96">
+                                <label for="" class="text-gray-800">Select Type</label>
+                                <div class="flex justify-start">
+                                    <div class="form-check form-check-inline">
+                                      <input class="hidden form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="social-links" id="instagram-link" value="link" checked>
+                                      <label class="social-links form-check-label inline-block text-gray-800" for="instagram-link"><i class="fa-brands fa-instagram"></i></label>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+                      <div class="hidden form-group mb-3">
+                        <input type="text"
+                        name="label"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-label"
+                          value="Facebook">
+                      </div>
+                      <div class="form-group mb-3">
+                        <input type="text"
+                        name="value"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-content"
+                          placeholder="Enter Twitter URL">
+                      </div>
+                      
+                        <button type="submit" class="
+                            px-6
+                            py-2.5
+                            bg-blue-600
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            hover:bg-blue-700 hover:shadow-lg
+                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-blue-800 active:shadow-lg
+                            transition
+                            duration-150
+                            ease-in-out">Add
+                        </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TWWITTER MODAL ENDS HERE -->
+
+<!-- LINK MODAL STARTS HERE -->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="link-modal" tabindex="-1" aria-labelledby="link-modalTitle" aria-modal="true" role="dialog">
     <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
         <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
             <div class="modal-body flex justify-center">
@@ -140,31 +481,37 @@
                       </div>
                         <div class="flex justify-center">
                             <div class="mb-3 xl:w-96">
-                              <select class="
-                                block
-                                w-full
-                                px-3
-                                py-1.5
-                                text-base
-                                font-normal
-                                text-gray-700
-                                bg-white bg-clip-padding bg-no-repeat
-                                border border-solid border-gray-300
-                                rounded
-                                transition
-                                ease-in-out
-                                m-0
-                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
-                                <option value="" disabled selected>Choose Type</option>
-                                <option value="text">Default</option>
-                                <option value="address">Address</option>
-                                <option value="email">Email</option>
-                                <option value="tel">Phone</option>
-                                <option value="wa">WhatsApp</option>
-                                <option value="url">Link</option>
-                                <option value="youtube">YouTube Video</option>
-                                <option value="map">Google Map</option>
-                              </select>
+                                <label for="" class="text-gray-800">Select Type</label>
+                                <div class="flex justify-start">
+                                    <div class="form-check form-check-inline">
+                                      <input class="hidden form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="social-links" id="whatsapp-link" value="wa">
+                                      <label class="social-links form-check-label inline-block text-gray-800" for="whatsapp-link"><i class="fa-brands fa-whatsapp"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="hidden form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="social-links" id="address-link" value="address">
+                                      <label class="social-links form-check-label inline-block text-gray-800" for="address-link"><i class="fa-solid fa-house"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="hidden form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="social-links" id="map-link" value="map">
+                                      <label class="social-links form-check-label inline-block text-gray-800" for="map-link"><i class="fa-solid fa-location-dot"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="hidden form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="social-links" id="email-link" value="email">
+                                      <label class="social-links form-check-label inline-block text-gray-800" for="email-link"><i class="fa-solid fa-at"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="hidden form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="social-links" id="phone-link" value="tel">
+                                      <label class="social-links form-check-label inline-block text-gray-800" for="phone-link"><i class="fa-solid fa-phone"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="hidden form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="social-links" id="youtube-link" value="youtube">
+                                      <label class="social-links form-check-label inline-block text-gray-800" for="youtube-link"><i class="fa-brands fa-youtube"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="hidden form-check-input form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="social-links" id="link-link" value="link">
+                                      <label class="social-links form-check-label inline-block text-gray-800" for="link-link"><i class="fa-solid fa-link"></i></label>
+                                    </div>
+                                  </div>
                             </div>
                       </div>
                       <div class="form-group mb-3">
@@ -229,7 +576,7 @@
         </div>
     </div>
 </div>
-<!-- FACEBOOK MODAL ENDS HERE -->
+<!-- LINK MODAL ENDS HERE -->
 
 <!-- Footer Starts Here -->
 <footer class="selectcolor mt-10 md:bottom-0 md:left-0 md:right-0">

@@ -1,9 +1,68 @@
-Facebook
-Instagram
-Twitter
-Other
+<div class="container mx-auto">
+     <div class="max-w-md py-10 px-4" style="margin-left: auto; margin-right: auto;">
+       <h1 class="text-xl text-center text-white">
+            Payment Links
+       </h1>
+          <div class="flex flex-col items-center justify-center">
+
+              <div class="bg-white shadow rounded lg:w-1/2  md:w-1/2 w-full p-10 mt-5">
+               <form class="">
+                   <div class="input-group mb-5">
+                       <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                       <div class="flex">
+                           <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                           Paystack
+                           </span>
+                           <input type="text" id="paystack_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Paystack URL">
+                       </div>
+                   </div>
+                   <div class="input-group mb-5">
+                       <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                       <div class="flex">
+                           <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                           Flutterwave
+                           </span>
+                           <input type="text" id="flutter_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Flutterwave URL">
+                       </div>
+                   </div>
+                   <div class="input-group mb-5">
+                       <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                       <div class="flex">
+                           <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                           PayPal
+                           </span>
+                           <input type="text" id="paypal_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Paypal Email Address">
+                       </div>
+                   </div>
+                   <div class="input-group mb-5">
+                       <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                       <div class="flex">
+                           <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                           Payoneer
+                           </span>
+                           <input type="text" id="payoneer_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
+                       </div>
+                   </div>
+                   <div class="input-group mb-5">
+                       <!-- <label for="personalized_link" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Personalized Link</label> -->
+                       <div class="flex">
+                           <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
+                           Bank Account
+                           </span>
+                           <input type="text" id="bank_pay" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
+                       </div>
+                   </div>
+                     
+                   <div class="text-center">
+                       <input class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" type="submit" value="Save">
+                   </div>
+               </form>
+              </div>
+          </div>
+      </div>
+      <!-- Component Start -->
 
 
-fab-fa-facebook
-fab-fa-twitter
-fab-fa-instagram
+    
+     <!-- Component End  -->
+</div>
