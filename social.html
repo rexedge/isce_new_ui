@@ -7,7 +7,6 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-     <link rel="stylesheet" href="flipper.css" />
      <script>
      tailwind.config = {
      theme: {
@@ -97,36 +96,140 @@
            </h1>
               <div class="flex flex-col items-center justify-center">
     
-                  <div class="bg-white shadow rounded lg:w-1/2  md:w-1/2 w-full p-10 mt-5">
-                   <form class="">
-                       <div class="grid grid-col-4">
-                           
+                  <div class="bg-white shadow rounded lg:w-1/2  md:w-1/2 w-full p-5 mt-5">
+                       <div class="flex justify-start mb-5">
+                           <div class="px-2" data-bs-toggle="modal" data-bs-target="#fb-modal"><img src="images/facebook.png" alt="" style="height: 40px;"></div>
+                           <div class="px-2"><img src="images/instagram.png" alt="" style="height: 40px;"></div>
+                           <div class="px-2"><img src="images/twitter.png" alt="" style="height: 40px;"></div>
+                           <div class="px-2"><img src="images/linked.png" alt="" style="height: 40px;"></div>
                        </div>
-
-                       <!-- <div class="input-group mb-5">
-                           <div class="flex">
-                               <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 rounded-l-md border border-r-0 border-gray-300">
-                               Facebook
-                               </span>
-                               <input type="text" id="fb_link" class="rounded-none rounded-r-lg bg-gray-50 border border-gray-300 text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5" placeholder="Enter Profile URL">
-                           </div>
-                       </div> -->
-                         
-                       <div class="text-center">
-                           <input class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="submit" value="Save">
-                       </div>
-                   </form>
                   </div>
               </div>
           </div>
           <!-- Component Start -->
 
-
-        
          <!-- Component End  -->
     </div>
 </div>
 <!-- Main Contents End Here -->
+
+<!-- FACEBOOK MODAL STARTS HERE -->
+<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="fb-modal" tabindex="-1" aria-labelledby="fb-modalTitle" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none">
+        <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+            <div class="modal-body flex justify-center">
+                <form action="#!" method="post" class="my-5">
+                    <div class="form-group mb-3">
+                        <input type="text"
+                        name="icon"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-icon"
+                          aria-describedby="emailHelp" placeholder="Select Icon">
+                      </div>
+                        <div class="flex justify-center">
+                            <div class="mb-3 xl:w-96">
+                              <select class="
+                                block
+                                w-full
+                                px-3
+                                py-1.5
+                                text-base
+                                font-normal
+                                text-gray-700
+                                bg-white bg-clip-padding bg-no-repeat
+                                border border-solid border-gray-300
+                                rounded
+                                transition
+                                ease-in-out
+                                m-0
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
+                                <option value="" disabled selected>Choose Type</option>
+                                <option value="text">Default</option>
+                                <option value="address">Address</option>
+                                <option value="email">Email</option>
+                                <option value="tel">Phone</option>
+                                <option value="wa">WhatsApp</option>
+                                <option value="url">Link</option>
+                                <option value="youtube">YouTube Video</option>
+                                <option value="map">Google Map</option>
+                              </select>
+                            </div>
+                      </div>
+                      <div class="form-group mb-3">
+                        <input type="text"
+                        name="label"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-label"
+                          placeholder="Label">
+                      </div>
+                      <div class="form-group mb-3">
+                        <input type="text"
+                        name="value"
+                        class="form-control block
+                          w-full
+                          px-3
+                          py-1.5
+                          text-base
+                          font-normal
+                          text-gray-700
+                          bg-white bg-clip-padding
+                          border border-solid border-gray-300
+                          rounded
+                          transition
+                          ease-in-out
+                          m-0
+                          focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="link-content"
+                          placeholder="content">
+                      </div>
+                      
+                        <button type="submit" class="
+                            px-6
+                            py-2.5
+                            bg-blue-600
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            hover:bg-blue-700 hover:shadow-lg
+                            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-blue-800 active:shadow-lg
+                            transition
+                            duration-150
+                            ease-in-out">Add
+                        </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FACEBOOK MODAL ENDS HERE -->
 
 <!-- Footer Starts Here -->
 <footer class="selectcolor mt-10 md:bottom-0 md:left-0 md:right-0">
@@ -192,7 +295,8 @@
  
  <!-- AlpineJS Library -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
- <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+ <!-- <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script> -->
+ <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
  <script>
      
  </script>
